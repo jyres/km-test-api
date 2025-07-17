@@ -1,0 +1,17 @@
+1 -  symfony new km-test-api
+
+2 - composer require api
+
+3 -  composer require maker --dev
+
+4 - creer les 3 tables bureaux, users et reservations avec la commande : php bin/console make:entity
+
+5 - configurer l'url de connexion mysql dans le fichier .env
+
+6 - symfony console make:migration pour créer la migration en fonction des modèles
+
+7 - symfony console doctrine:migrations:migrate pour exécuter la migration
+
+8-  php bin/console doctrine:fixtures:load pour executer le fixture crée
+
+9- composer require symfony/serializer-pack

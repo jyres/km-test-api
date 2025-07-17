@@ -14,7 +14,9 @@ return [
     '_api_validation_errors_jsonapi' => [['id'], ['_controller' => 'api_platform.symfony.main_controller', '_stateless' => null, '_api_resource_class' => 'ApiPlatform\\Validator\\Exception\\ValidationException', '_api_operation_name' => '_api_validation_errors_jsonapi', '_format' => null], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/validation_errors']], [], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
     'reservations' => [[], ['_controller' => 'App\\Controller\\ApiController::store_new_reservation'], [], [['text', '/reservations']], [], [], []],
-    'user_reservations' => [['id'], ['_controller' => 'App\\Controller\\ApiController::get_user_reservations'], [], [['text', '/reservations'], ['variable', '/', '[^/]++', 'id', true], ['text', '/users']], [], [], []],
+    'user_reservations' => [['id_user'], ['_controller' => 'App\\Controller\\ApiController::get_user_reservations'], [], [['text', '/reservations'], ['variable', '/', '[^/]++', 'id_user', true], ['text', '/users']], [], [], []],
+    'get_all_bureaux' => [[], ['_controller' => 'App\\Controller\\ApiController::get_all_bureaux'], [], [['text', '/bureaux']], [], [], []],
     'App\Controller\ApiController::store_new_reservation' => [[], ['_controller' => 'App\\Controller\\ApiController::store_new_reservation'], [], [['text', '/reservations']], [], [], []],
-    'App\Controller\ApiController::get_user_reservations' => [['id'], ['_controller' => 'App\\Controller\\ApiController::get_user_reservations'], [], [['text', '/reservations'], ['variable', '/', '[^/]++', 'id', true], ['text', '/users']], [], [], []],
+    'App\Controller\ApiController::get_user_reservations' => [['id_user'], ['_controller' => 'App\\Controller\\ApiController::get_user_reservations'], [], [['text', '/reservations'], ['variable', '/', '[^/]++', 'id_user', true], ['text', '/users']], [], [], []],
+    'App\Controller\ApiController::get_all_bureaux' => [[], ['_controller' => 'App\\Controller\\ApiController::get_all_bureaux'], [], [['text', '/bureaux']], [], [], []],
 ];

@@ -30,7 +30,7 @@ composer require maker --dev
 
 ### configuration générale
 
-créer le fichier .env et configurer la variable DATABASE_URL.
+créer le fichier .env à partir du fichier .env.example et configurer la variable DATABASE_URL.
 
 ### creer les tables dans la BD et y insérer des données génériques
 

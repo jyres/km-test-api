@@ -49,3 +49,22 @@ php bin/console doctrine:fixtures:load
 ```sh
 symfony server:start --port=8000
 ```
+
+### Exemples de requettes API
+
+enregistrer une reservation
+
+```sh
+curl --location --request POST 'http://127.0.0.1:8000/reservations' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'id_user=1' \
+--data-urlencode 'id_bureau=2' \
+--data-urlencode 'date_debut_reservation=2025-07-16 19:00:00' \
+--data-urlencode 'date_fin_reservation=2025-07-17 19:00:00'
+```
+
+lister les réservation d'un utilisateur
+
+```sh
+symfony server:start --port=8080
+```
